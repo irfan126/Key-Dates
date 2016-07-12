@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/CategoryTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@null"
+                android:text="@string/catTitle_hint"
+                android:textAllCaps="false"
+
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/CategoryDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@null"
+                android:text="@string/hint_catdesc"
+                android:textAllCaps="false"
+
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@null"
+                android:text="@string/hint_userID"
+                android:textAllCaps="false"
+
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:id="@+id/ActivationDateTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:text="@string/hint_TitleActivationDate"
+                android:textAllCaps="false"
+
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:id="@+id/reminderView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:text="@string/hint_ActDate"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/input_login_hint"
+                android:textSize="18dp"/>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/BtnNext"
+
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+
+                android:background="@color/white"
+                android:text="@string/btn_next"
+                android:layout_marginTop="10dip"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

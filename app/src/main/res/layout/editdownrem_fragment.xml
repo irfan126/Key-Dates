@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip">
+
+
+            <TextView
+                android:id="@+id/userID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="User ID"
+                android:paddingBottom="1dp"
+                android:paddingTop="2dp"/>
+
+            <TextView
+                android:id="@+id/todaysDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Date"
+                android:paddingBottom="1dp"
+                android:paddingTop="2dp"/>
+
+        <TextView
+            android:id="@+id/Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userID"
+            android:paddingTop="1dp"
+            android:textColor="#ff6861"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/CategoryHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Upload"
+            android:paddingBottom="2dp"
+            android:paddingTop="1dp"
+            android:text="Category"
+            android:textColor="#222222"
+            android:textIsSelectable="true"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor1"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/CategoryHeader" />
+
+        <TextView
+            android:id="@+id/Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SplitLine_hor1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Large Text"
+            android:textColor="#3399FF"
+            android:paddingLeft="10dp"
+            android:textIsSelectable="true"
+            android:textSize="16dp"
+            android:autoLink="all"/>
+
+        <TextView
+            android:id="@+id/catDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Category"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="Large Text"
+            android:textColor="#3399FF"
+            android:textIsSelectable="true"
+            android:textSize="16dp"
+            android:autoLink="all"/>
+
+        <TextView
+            android:id="@+id/RemiderHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/catDesc"
+            android:paddingBottom="2dp"
+            android:text="Reminder"
+            android:textColor="#222222"
+            android:textIsSelectable="true"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"
+            android:autoLink="web"/>
+        <View
+            android:id="@+id/SplitLine_hor2"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/RemiderHeader" />
+
+
+        <TextView
+            android:id="@+id/Reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/SplitLine_hor2"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:text="Large Text"
+            android:textColor="#3399FF"
+            android:paddingLeft="10dp"
+            android:textIsSelectable="true"
+            android:textSize="16dp"
+            android:autoLink="all"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Reminder"
+            android:paddingBottom="15dp"
+            android:text="Reminder Date: "
+            android:textColor="#222222"
+            android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/reminderView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/textView1"
+                android:background="@color/white"
+                android:text="@string/hint_Remdate"
+                android:padding="10dp"
+                android:textColor="@color/input_login"
+                android:singleLine="true"
+                android:textColorHint="@color/input_login_hint"
+                android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reminderView"
+            android:paddingBottom="15dp"
+            android:text="Expiry Date: "
+            android:textColor="#222222"
+            android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/reminderExpiry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:textColor="@color/input_login"
+                android:text="@string/hint_RemExpiry"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/input_login_hint"
+                android:textSize="18dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/reminderExpiry"
+            android:layout_height="80dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp" >
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/no_image_black"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/no_image_black"
+                android:layout_marginLeft="2dp"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linear1"
+            android:paddingBottom="2dp"
+            android:text="Reminder Notes: "
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/textView3" />
+
+
+        <TextView
+            android:id="@+id/remNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/hint_RemNotes"
+            android:minLines="5"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/SplitLine_hor3"
+            android:textColor="#3399FF"
+            android:textSize="16dp"
+            android:textIsSelectable="true"
+            android:autoLink="all"/>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/BtnSave"
+
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/remNotes"
+
+                android:background="@color/white"
+                android:text="@string/btn_Save"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip">
+
+
+        <TextView
+            android:id="@+id/userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="User ID"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"/>
+
+        <TextView
+            android:id="@+id/todaysDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Date"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/deleteAccountHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userID"
+            android:paddingBottom="2dp"
+            android:text="Delete Task iQ account?"
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor2"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:paddingBottom="10dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/deleteAccountHeader" />
+
+
+        <TextView
+            android:id="@+id/deleteAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SplitLine_hor2"
+            android:paddingBottom="20dp"
+            android:text="Delete Task iQ account?"
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/feedbackHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deleteAccount"
+
+            android:paddingBottom="2dp"
+            android:text="Please provide feedback on how we can improve Task iQ or why you deleted your account?"
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="14dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/feedbackHeader" />
+
+        <EditText
+            android:id="@+id/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SplitLine_hor3"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/hint_feedback"
+            android:padding="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="2"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:scrollbars="vertical"
+            android:gravity="top|left"
+            android:maxLength="500"/>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/hint_password1"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"/>
+
+
+        <!-- Confirm Button -->
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/password"
+            android:text="@string/btn_confirm"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+<!-- Edit-->
+<item android:id="@+id/action_edit"
+    android:title="@string/action_edit"
+    app:showAsAction="always"
+    android:icon="@mipmap/ic_mode_edit_black_24dp"/>
+
+
+<!-- Renew-->
+<item android:id="@+id/action_renew"
+    android:title="@string/action_renew"
+    app:showAsAction="ifRoom"
+    android:icon="@mipmap/ic_refresh_black_24dp"/>
+
+
+    <!-- Renew-->
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_share_black_24dp"/>
+
+
+    <!-- Information/ will display always -->
+    <item android:id="@+id/action_info"
+        android:icon="@mipmap/ic_info_outline_black_24dp"
+        android:title="@string/action_info"
+        app:showAsAction="ifRoom"/>
+
+
+    <!-- Archive Reminder -->
+    <item android:id="@+id/action_archive"
+        android:title="@string/action_archive"
+        app:showAsAction="never" />
+
+
+    <!-- Delete Reminder -->
+    <item android:id="@+id/action_delete"
+        android:title="@string/action_delete"
+        android:icon="@mipmap/ic_delete_black_24dp"
+        app:showAsAction="never" />
+
+<!--  android:orderInCategory="100" -->
+</menu>

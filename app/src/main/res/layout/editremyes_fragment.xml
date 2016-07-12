@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/Upload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#ff6861"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/CategoryTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:text="@string/hint_Catergory"
+                android:textAllCaps="false"
+                android:textColor="@color/input_login"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/CategoryDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@null"
+                android:text="@string/hint_Description"
+                android:textAllCaps="false"
+
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ActivationDateTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:text="@string/hint_TitleActivationDate"
+                android:textAllCaps="false"
+                android:textColor="@color/input_login"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ActivationDays"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:text="@string/hint_ActDate"
+                android:textAllCaps="false"
+                android:textColor="@color/input_login"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ReminderHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:text="@string/hint_remTitle"
+                android:textAllCaps="false"
+                android:textColor="@color/input_login"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/ReminderTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="@string/remTitle_hint"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:maxLength="35"/>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/DaysRemDateText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/hint_DaysRemdate"
+                android:textAllCaps="false"
+                android:textColor="#428bca"
+                android:textStyle="bold"
+
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/reminderView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:background="@color/white"
+                android:hint="@string/hint_Remdate"
+                android:inputType="numberSigned"
+                android:textColor="@color/input_login"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/input_login_hint"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/DaysRemExpiryText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/hint_DaysRemExpiry"
+                android:textAllCaps="false"
+                android:textColor="#428bca"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/reminderExpiry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="@string/hint_RemExpiry"
+                android:inputType="numberSigned"
+                android:textColor="@color/input_login"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/input_login_hint"
+                android:textSize="18dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/add_image_black"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add_image_black"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/ReminderNotesHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/hint_RemNotes"
+                android:textAllCaps="false"
+                android:textColor="@color/input_login"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/ReminderNotes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:hint="@string/hint_RemNotes"
+                android:padding="10dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="4"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:textSize="18dp"
+                android:scrollbars="vertical"
+                android:gravity="top|left"
+                android:maxLength="1000"/>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/BtnSave"
+
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+
+                android:background="@color/white"
+                android:text="@string/btn_Save"
+                android:layout_marginTop="10dip" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:background="#428bca">
+
+        <TextView
+            android:id="@+id/reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentLeft="true"
+            android:textSize="16dp"
+            android:background="#428bca"
+            android:text="Archived Reminders"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+
+
+        <TextView
+            android:id="@+id/todaysDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#428bca"
+            android:layout_alignParentRight="true"
+            android:text="Date"
+            android:textSize="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+
+
+        />
+
+</LinearLayout>

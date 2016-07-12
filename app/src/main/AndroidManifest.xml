@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.taskiq.keydates" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <!-- Permission to start Alarm on device reboot -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+
+        android:name="app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+ >
+
+        <activity
+            android:name="uk.co.taskiq.keydates.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="lifeiq.net76.net"
+                    android:path="/get/" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.RegisterActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="uk.co.taskiq.keydates.PasswordChangeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="uk.co.taskiq.keydates.PasswordResetActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="uk.co.taskiq.keydates.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.ReminderActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.SettingActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.ArchiveCategoryActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.RemPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.EditRemActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.RenewRemActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.ArchivedRemActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.ArchivePageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.CatDescActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.EditCatDescActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.AddCategoryActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+
+
+        </activity>
+        <meta-data android:name="android.app.default_searchable"
+            android:value=".AddCategoryActivity" />
+
+        <activity
+            android:name="uk.co.taskiq.keydates.CreateRemNoActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.CreateRemYesActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.ActDateActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.UploadSumActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.ActDateDownActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.LifeIQRemActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.EditRemYesActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.EditDownRemActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.CatDescYesActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.EditCatDescYesActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.DisplayImageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.AddDownloadActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.DelAccountActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.ContactUsActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.ContactUsLoginActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.ShareActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+        <activity
+            android:name="uk.co.taskiq.keydates.ChangePasswordActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="uk.co.taskiq.keydates.ShareRemActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+        <receiver android:name="uk.co.taskiq.keydates.AlarmReciever" android:process=":remote"/>
+        <receiver android:name="uk.co.taskiq.keydates.AlarmReciever1" android:process=":remote"/>
+        <receiver android:name="uk.co.taskiq.keydates.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="uk.co.taskiq.keydates.PopulateService" />
+    </application>
+
+</manifest>

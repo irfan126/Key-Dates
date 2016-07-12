@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip">
+
+
+        <TextView
+            android:id="@+id/userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="User ID"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"/>
+
+        <TextView
+            android:id="@+id/todaysDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Date"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/ShareHeader1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userID"
+            android:paddingBottom="2dp"
+            android:text="Share Catergory"
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor2"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_marginBottom="20dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/ShareHeader1" />
+
+
+        <TextView
+            android:id="@+id/ShareCategory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SplitLine_hor2"
+            android:layout_marginBottom="20dp"
+            android:text="To share this Category please enter the recipients email address."
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/Invite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ShareCategory"
+            android:layout_marginBottom="20dp"
+            android:text="If the recipient does not have a Task iQ account a invite will be sent to their email address."
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/CategoryTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/Invite"
+            android:background="@null"
+            android:text="@string/catTitle_hint"
+            android:textAllCaps="false"
+
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/CategoryDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/CategoryTitle"
+            android:background="@null"
+            android:text="@string/hint_catdesc"
+            android:textAllCaps="false"
+
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/RecipientsHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CategoryDesc"
+
+            android:layout_marginBottom="2dp"
+            android:text="Recipients email"
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_marginBottom="20dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/RecipientsHeader" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:layout_below="@+id/SplitLine_hor3"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:maxLength="35"/>
+
+        <!-- Confirm Button -->
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/email"
+            android:text="@string/btn_share"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

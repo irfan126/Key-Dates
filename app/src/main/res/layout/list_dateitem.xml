@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"/>
+    <!--  android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"-->
+
+    <TextView
+        android:id="@+id/Reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingTop="5dp"
+        android:textColor="#E64A19"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reminder"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="8dp"
+        android:textColor="#3399FF"
+        android:textSize="14dp"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:ellipsize="end"
+         />
+
+
+    <TextView
+        android:id="@+id/reminderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:textSize="16dp"
+        android:paddingTop="5dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/upload"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:paddingTop="6dp"
+        android:layout_below="@+id/reminderDate"
+        android:layout_toLeftOf ="@id/userID"
+
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:id="@+id/userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/reminderDate"
+        android:paddingRight="10dp"
+        android:text="User ID"
+        android:paddingBottom="8dp" />
+
+
+</RelativeLayout>

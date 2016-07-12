@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1"
+        >
+
+
+        <TextView
+            android:id="@+id/CategoryTitleHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:text="@string/string_NewCategoryTitleHeader"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/input_login"/>
+
+
+        <EditText
+            android:id="@+id/CategoryTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/newCatTitle_hint"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:maxLength="35"/>
+
+
+        <EditText
+            android:id="@+id/CategoryDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            android:hint="@string/hint_catdesc"
+            android:inputType="textCapSentences"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+
+            android:maxLength="35"/>
+
+        <!-- Next Button -->
+
+        <Button
+            android:id="@+id/BtnSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:background="@color/white"
+            android:text="@string/btn_next"
+            />
+
+        <TextView
+            android:id="@+id/Or"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:text="@string/string_OR"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/input_login"/>
+
+        <TextView
+            android:id="@+id/ExisitngCategoryLink"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:text="@string/string_ExisitngCategoryLink"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/input_login"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        />
+
+</LinearLayout>
+

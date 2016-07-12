@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/Upload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="#ff6861"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/Upload"
+                android:textColor="#222222"
+                android:text="Category: "
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            <EditText
+                android:id="@+id/Category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:hint="@string/catTitle_hint"
+                android:inputType="textCapSentences"
+                android:layout_below="@+id/textView1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:maxLength="35"/>
+
+                       <TextView
+                android:id="@+id/CategoryDescHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:textColor="#222222"
+                android:layout_marginBottom="0dp"
+                android:layout_below="@+id/Category"
+                android:text="@string/string_CatDesc"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <EditText
+                android:id="@+id/catDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+                android:layout_below="@+id/CategoryDescHeader"
+                android:hint="@string/hint_catdesc"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:maxLength="35"/>
+
+            <TextView
+                android:id="@+id/ActivationDateTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/catDesc"
+                android:text="@string/hint_ActDateText"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <EditText
+                android:id="@+id/ActivationDateTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:layout_below="@+id/ActivationDateTitleText"
+                android:hint="@string/hint_TitleActivationDate"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:maxLength="100"/>
+
+            <TextView
+                android:id="@+id/ActivationDateExplained"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/ActivationDateTitle"
+                android:text="@string/hint_ActDateExplain"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/ActivationDateText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/ActivationDateExplained"
+                android:text="@string/hint_ActDate"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <TextView
+                android:id="@+id/reminderView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:layout_below="@+id/ActivationDateText"
+                android:hint="@string/hint_ActDate"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint" />
+
+
+
+            <TextView
+                android:id="@+id/UploadSumHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/reminderView"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <EditText
+                android:id="@+id/UploadSum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minLines="4"
+                android:layout_below="@+id/UploadSumHeader"
+                android:textColor="@color/input_login"
+                android:hint="@string/hint_uploadblank"
+                android:textColorHint="@color/input_login_hint"
+                android:scrollbars="vertical"
+                android:gravity="top|left"
+                android:maxLength="1000"/>
+
+
+            <Button
+                android:id="@+id/BtnSave"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:text="@string/btn_Save"
+                android:layout_marginTop="10dip" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

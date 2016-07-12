@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip">
+
+        <TextView
+            android:id="@+id/userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="User ID"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"/>
+
+        <TextView
+            android:id="@+id/todaysDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Date"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"/>
+
+        <TextView
+            android:id="@+id/CategoryHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userID"
+            android:paddingBottom="2dp"
+            android:paddingTop="10dp"
+            android:text="Category"
+            android:textColor="#222222"
+            android:textIsSelectable="true"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor1"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/CategoryHeader" />
+        <TextView
+            android:id="@+id/Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SplitLine_hor1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="Large Text"
+            android:textColor="#3399FF"
+            android:textIsSelectable="true"
+            android:textSize="16dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/catDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Category"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:text="Large Text"
+            android:textColor="#3399FF"
+            android:textIsSelectable="true"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/UploadHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/catDesc"
+            android:paddingBottom="2dp"
+            android:text="Upload status"
+            android:textColor="#222222"
+            android:textIsSelectable="true"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"/>
+        <View
+            android:id="@+id/SplitLine_hor2"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/UploadHeader" />
+
+        <TextView
+            android:id="@+id/Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/SplitLine_hor2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Large Text"
+            android:textColor="#ff6861"
+            android:textSize="16dp"/>
+
+
+        <TextView
+            android:id="@+id/DownloadCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Upload"
+            android:paddingBottom="20dp"
+            android:text="Large Text"
+            android:textColor="#ff6861"
+            android:textIsSelectable="true"
+            android:textSize="16dp"/>
+
+
+        <TextView
+            android:id="@+id/UploadSumHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/DownloadCount"
+            android:paddingBottom="2dp"
+            android:text="Upload summary: "
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/UploadSumHeader" />
+
+
+        <TextView
+            android:id="@+id/UploadSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/SplitLine_hor3"
+            android:hint="@string/hint_UploadSum"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#3399FF"
+            android:textSize="16dp"
+            android:textIsSelectable="true"/>
+
+
+
+        <!--
+               <Button
+                   android:id="@+id/BtnEdit"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:background="@color/white"
+                   android:paddingLeft="20dp"
+                   android:paddingRight="20dp"
+                   android:text="@string/action_edit"
+                   android:layout_below="@+id/UploadSum"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginEnd="20dp" />
+
+      -->
+
+           </RelativeLayout>
+
+       </ScrollView>
+

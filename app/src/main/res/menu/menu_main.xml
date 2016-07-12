@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+
+
+
+
+    <!-- Add Category -->
+    <item android:id="@+id/action_add"
+        android:icon="@mipmap/ic_add_black_24dp"
+        android:title="@string/action_add"
+        app:showAsAction="ifRoom"/>
+
+
+
+    <!-- Logout -->
+    <item android:id="@+id/action_logout"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+    <!-- Contact Us -->
+    <item android:id="@+id/action_ContactUs"
+        android:title="@string/action_ContactUs"
+        app:showAsAction="never" />
+
+
+    <!-- Settings -->
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+                app:showAsAction="never" />
+
+
+    <!-- Settings -->
+    <item android:id="@+id/refresh"
+        android:title="@string/action_refresh"
+        android:icon="@mipmap/ic_cached_black_24dp"
+        app:showAsAction="ifRoom" />
+
+    <!-- Information/ will display always -->
+    <item android:id="@+id/action_info"
+        android:icon="@mipmap/ic_info_outline_black_24dp"
+        android:title="@string/action_info"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings -->
+    <item android:id="@+id/action_archivedCategories"
+        android:title="@string/action_archivedCategories"
+        app:showAsAction="never" />
+
+    <!--  android:orderInCategory="100" -->
+</menu>

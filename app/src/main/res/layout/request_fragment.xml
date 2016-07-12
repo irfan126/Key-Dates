@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip">
+
+
+        <TextView
+            android:id="@+id/userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="User ID"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"/>
+
+        <TextView
+            android:id="@+id/todaysDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Date"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/RequestTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userID"
+            android:paddingBottom="2dp"
+            android:text="Request"
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor2"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/RequestTitle" />
+
+
+        <TextView
+            android:id="@+id/RequestTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SplitLine_hor2"
+            android:paddingBottom="20dp"
+            android:text="If you cannot find a Calender, Category or Reminder you require under the Download tab.
+
+Please complete the form below and we will try to add the requested Calender, Category or Reminder to Task iQ. "
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/RequestHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RequestTitleText"
+
+            android:paddingBottom="2dp"
+            android:text="Request"
+            android:textStyle="bold|italic"
+            android:textColor="#222222"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/RequestHeader" />
+
+        <EditText
+            android:id="@+id/Request"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SplitLine_hor3"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/hint_request"
+            android:padding="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="4"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:scrollbars="vertical"
+            android:gravity="top|left"
+            android:maxLength="500"/>
+
+
+
+
+
+        <!-- Confirm Button -->
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/Request"
+            android:text="@string/btn_send"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
